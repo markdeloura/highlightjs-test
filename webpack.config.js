@@ -8,7 +8,10 @@ module.exports = {
 			directory: './dist'
 		}
 	},
-	entry: './src/index.js',
+	entry: './src/index.ts',
+	resolve: {
+		extensions: ['.ts', '.js']
+	},
 	output: {
 		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist'),
@@ -19,6 +22,11 @@ module.exports = {
 				test: /\.css$/i,
 				use: ["style-loader", "css-loader"],
 			},
+			{
+				test: /\.ts$/i,
+				exclude: /node_modules/,
+				use: ['ts-loader'],
+			}
 		],
 	},
 };
