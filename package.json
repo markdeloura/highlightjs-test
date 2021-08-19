@@ -1,0 +1,25 @@
+{
+	"name": "highlight-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"build": "webpack --config webpack.config.js",
+		"dev": "webpack serve --config webpack.config.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"highlight.js": "^11.2.0"
+	},
+	"devDependencies": {
+		"css-loader": "^6.2.0",
+		"style-loader": "^3.2.1",
+		"typescript": "^4.3.5",
+		"webpack": "^5.51.1",
+		"webpack-cli": "^4.8.0",
+		"webpack-dev-server": "^4.0.0"
+	}
+}
